@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Смарт Медикал - Современный медицинский центр в Минске | УНП 193215226</title>
+    <meta name="description" content="Медицинский центр Смарт Медикал в Минске. Современное оборудование, квалифицированные врачи, комфортные условия. Стоматология, гинекология, УЗИ, эндокринология. Запись онлайн.">
+    <meta name="keywords" content="медицинский центр Минск, Смарт Медикал, стоматология, гинекология, УЗИ, эндокринология, врачи Минск, медицинские услуги">
+    <meta name="author" content="ООО «Смарт Медикал»">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://smartmedical.by/">
+    
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Смарт Медикал - Современный медицинский центр в Минске">
+    <meta property="og:description" content="Новый центр медицинских услуг с современным оборудованием в экологически чистом районе Лебяжий. Полный спектр медицинских услуг для взрослых и детей.">
+    <meta property="og:image" content="../assets/images/main-banner.jpg">
+    <meta property="og:url" content="https://smartmedical.by/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Смарт Медикал">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Смарт Медикал - Современный медицинский центр в Минске">
+    <meta name="twitter:description" content="Новый центр медицинских услуг с современным оборудованием в экологически чистом районе Лебяжий.">
+    <meta name="twitter:image" content="../assets/images/main-banner.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://smartmedical.by/#organization",
+        "name": "Смарт Медикал",
+        "legalName": "Общество с ограниченной ответственностью «Смарт Медикал»",
+        "url": "https://smartmedical.by",
+        "logo": "https://smartmedical.by/assets/images/logo.png",
+        "image": [
+            "https://smartmedical.by/assets/images/main-banner.jpg",
+            "https://smartmedical.by/assets/images/about-clinic.png"
+        ],
+        "description": "Новый центр медицинских услуг расположен в экологически чистом районе Лебяжий города Минска на проспекте Победителей рядом с биологическим заказником Дрозды.",
+        "telephone": "+375-29-161-01-01",
+        "email": "smartmedical.by@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "пр-т Победителей, д. 119, пом. 504",
+            "addressLocality": "Минск",
+            "addressCountry": "BY"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "53.9045",
+            "longitude": "27.5615"
+        },
+        "openingHours": [
+            "Mo-Fr 08:00-20:00",
+            "Sa 09:00-18:00"
+        ],
+        "priceRange": "$$",
+        "@type": "MedicalOrganization",
+        "medicalSpecialty": [
+            "Стоматология",
+            "Детская стоматология", 
+            "Гинекология",
+            "Детская гинекология",
+            "Детская урология",
+            "Эндокринология",
+            "Онкология",
+            "УЗИ диагностика"
+        ],
+        "identifier": {
+            "@type": "PropertyValue",
+            "name": "УНП",
+            "value": "193215226"
+        },
+        "sameAs": [
+            "https://www.instagram.com/smart_med_clinic/"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <img src="../assets/images/logo.png" alt="Смарт Медикал" class="logo">
+                </div>
+                
+                <ul class="navbar-nav">
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#prices">Цены</a></li>
+                    <li><a href="#clinic">Клиника</a></li>
+                    <li><a href="#specialists">Специалисты</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+                
+                <div class="navbar-actions">
+                    <div class="phone-number">
+                        <i class="fas fa-phone"></i>
+                        <span>+375-29-161-01-01</span>
+                    </div>
+                    <button class="btn btn-outline" onclick="requestCall()">Заказать звонок</button>
+                    <button class="btn btn-primary" onclick="bookOnline()">Запись онлайн</button>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <img src="../assets/images/main-banner.jpg" alt="Современная клиника Смарт Медикал" loading="eager">
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Современный медицинский центр <span class="text-primary">Смарт Медикал</span></h1>
+                    <p class="hero-subtitle">Новый центр медицинских услуг в экологически чистом районе «Лебяжий» с современным оборудованием и индивидуальным подходом</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large" onclick="bookOnline()">
+                            <i class="fas fa-calendar-plus"></i>
+                            Записаться онлайн
+                        </button>
+                        <button class="btn btn-outline btn-large" onclick="scrollToServices()">
+                            <i class="fas fa-info-circle"></i>
+                            Узнать больше
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="about-content">
+                            <h2 class="section-title">О медицинском центре</h2>
+                            <p class="section-description">
+                                Медицинский центр «Смарт Медикал» расположен в экологически чистом районе «Лебяжий» города Минска на проспекте Победителей рядом с биологическим заказником «Дрозды».
+                            </p>
+                            <p>
+                                Современные и просторные помещения с высокими потолками и естественным освещением специально спроектированы для комфортного пребывания.
+                            </p>
+                            <div class="advantages">
+                                <div class="advantage-item">
+                                    <i class="fas fa-microscope text-primary"></i>
+                                    <span>Современное оборудование</span>
+                                </div>
+                                <div class="advantage-item">
+                                    <i class="fas fa-user-md text-primary"></i>
+                                    <span>Квалифицированные врачи</span>
+                                </div>
+                                <div class="advantage-item">
+                                    <i class="fas fa-heart text-primary"></i>
+                                    <span>Индивидуальный подход</span>
+                                </div>
+                                <div class="advantage-item">
+                                    <i class="fas fa-leaf text-primary"></i>
+                                    <span>Экологически чистый район</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-image">
+                            <img src="../assets/images/about-clinic.png" alt="О клинике Смарт Медикал" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Наши услуги</h2>
+                    <p class="section-subtitle">Полный спектр медицинских услуг для взрослых и детей</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <h3>Стоматология</h3>
+                        <p>Современные методы лечения и профилактики заболеваний полости рта</p>
+                        <button class="btn btn-outline" onclick="showServiceDetails('stomatology')">Подробнее</button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3>Детская стоматология</h3>
+                        <p>Специализированная стоматологическая помощь для детей</p>
+                        <button class="btn btn-outline" onclick="showServiceDetails('pediatric-dentistry')">Подробнее</button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <h3>Гинекология</h3>
+                        <p>Комплексная диагностика и лечение гинекологических заболеваний</p>
+                        <button class="btn btn-outline" onclick="showServiceDetails('gynecology')">Подробнее</button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3>Детская гинекология</h3>
+                        <p>Деликатная гинекологическая помощь для девочек и подростков</p>
+                        <button class="btn btn-outline" onclick="showServiceDetails('pediatric-gynecology')">Подробнее</button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-male"></i>
+                        </div>
+                        <h3>Детская урология</h3>
+                        <p>Диагностика и лечение урологических заболеваний у детей</p>
+                        <button class="btn btn-outline" onclick="showServiceDetails('pediatric-urology')">Подробнее</button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <h3>Эндокринология</h3>
+                        <p>Диагностика и лечение заболеваний эндокринной системы</p>
+                        <button class="btn btn-outline" onclick="showServiceDetails('endocrinology')">Подробнее</button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-ribbon"></i>
+                        </div>
+                        <h3>Онкология</h3>
+                        <p>Ранняя диагностика и лечение онкологических заболеваний</p>
+                        <button class="btn btn-outline" onclick="showServiceDetails('oncology')">Подробнее</button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>УЗИ диагностика</h3>
+                        <p>Современная ультразвуковая диагностика на новейшем оборудовании</p>
+                        <button class="btn btn-outline" onclick="showServiceDetails('ultrasound')">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Наша клиника</h2>
+                    <p class="section-subtitle">Современные помещения и комфортная атмосфера</p>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../assets/images/clinic-interior.jpg" alt="Интерьер клиники Смарт Медикал" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Просторные помещения</h3>
+                            <p>Комфортные зоны ожидания</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/consultation-room.jpeg" alt="Кабинет консультации" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Кабинеты консультации</h3>
+                            <p>Современное оснащение</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/modern-medical-office.jpg" alt="Современный медицинский кабинет" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Медицинские кабинеты</h3>
+                            <p>Высокотехнологичное оборудование</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contacts">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Контактная информация</h2>
+                    <p class="section-subtitle">Мы всегда готовы помочь вам</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Адрес</h4>
+                                    <p>г. Минск, пр-т Победителей, д. 119, пом. 504<br>
+                                    (район «Лебяжий», рядом с заказником «Дрозды»)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Телефон</h4>
+                                    <p><a href="tel:+375291610101">+375-29-161-01-01</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:smartmedical.by@gmail.com">smartmedical.by@gmail.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Время работы</h4>
+                                    <p>Пн-Пт: 08:00 - 20:00<br>
+                                    Сб: 09:00 - 18:00<br>
+                                    Вс: выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="contact-form">
+                            <h3>Заказать звонок</h3>
+                            <form id="callbackForm">
+                                <div class="form-group">
+                                    <label for="name">Имя *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Телефон *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="service">Интересующая услуга</label>
+                                    <select id="service" name="service">
+                                        <option value="">Выберите услугу</option>
+                                        <option value="stomatology">Стоматология</option>
+                                        <option value="pediatric-dentistry">Детская стоматология</option>
+                                        <option value="gynecology">Гинекология</option>
+                                        <option value="pediatric-gynecology">Детская гинекология</option>
+                                        <option value="pediatric-urology">Детская урология</option>
+                                        <option value="endocrinology">Эндокринология</option>
+                                        <option value="oncology">Онкология</option>
+                                        <option value="ultrasound">УЗИ диагностика</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Сообщение</label>
+                                    <textarea id="message" name="message" rows="4"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-full">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Отправить заявку
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logo.png" alt="Смарт Медикал">
+                        <h3>Смарт Медикал</h3>
+                    </div>
+                    <p>Современный медицинский центр в экологически чистом районе Минска с индивидуальным подходом к каждому пациенту.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/smart_med_clinic/" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="#services">Стоматология</a></li>
+                        <li><a href="#services">Детская стоматология</a></li>
+                        <li><a href="#services">Гинекология</a></li>
+                        <li><a href="#services">Детская гинекология</a></li>
+                        <li><a href="#services">Детская урология</a></li>
+                        <li><a href="#services">Эндокринология</a></li>
+                        <li><a href="#services">Онкология</a></li>
+                        <li><a href="#services">УЗИ диагностика</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="contact-info-footer">
+                        <p><i class="fas fa-map-marker-alt"></i> г. Минск, пр-т Победителей, д. 119, пом. 504</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+375291610101">+375-29-161-01-01</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:smartmedical.by@gmail.com">smartmedical.by@gmail.com</a></p>
+                        <p><i class="fas fa-globe"></i> <a href="https://smartmedical.by">smartmedical.by</a></p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Время работы</h4>
+                    <div class="working-hours">
+                        <p>Понедельник - Пятница: 08:00 - 20:00</p>
+                        <p>Суббота: 09:00 - 18:00</p>
+                        <p>Воскресенье: выходной</p>
+                    </div>
+                    <button class="btn btn-primary btn-full" onclick="bookOnline()">
+                        <i class="fas fa-calendar-plus"></i>
+                        Запись онлайн
+                    </button>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2024 ООО «Смарт Медикал». Все права защищены.</p>
+                    <p>УНП: 193215226 | Лицензия на медицинскую деятельность</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Политика конфиденциальности</a>
+                    <a href="#terms">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/components.js"></script>
+</body>
+</html>
